@@ -1,0 +1,40 @@
+{
+    "name": "DelimitedText1",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "ls_stg2024",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "File_Name": {
+                "type": "string"
+            },
+            "File_Delimiter": {
+                "type": "string"
+            },
+            "Target_Table": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileName": {
+                    "value": "@dataset().File_Name",
+                    "type": "Expression"
+                },
+                "fileSystem": "demo"
+            },
+            "columnDelimiter": {
+                "value": "@dataset().File_Delimiter",
+                "type": "Expression"
+            },
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": []
+    }
+}
