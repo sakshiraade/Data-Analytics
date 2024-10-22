@@ -1,6 +1,0 @@
-selected resource name:		pipeline1
-selected resource type:		pipeline
-factory name:			azure7370
-factory location:		eastus
-subscription id:		d00a6ac1-2c00-4551-9ff7-8edfb889f5cc
-time of download (UTC):		Sun, 03 Mar 2024 23:03:01 GMT
